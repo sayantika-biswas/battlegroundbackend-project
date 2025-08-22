@@ -2,6 +2,7 @@ const express = require("express");
 const dotenv = require("dotenv");
 const cors = require("cors");
 const connectDB = require("./config/db");
+const PORT = process.env.PORT || 3000;
 
 dotenv.config();
 connectDB();
@@ -25,6 +26,6 @@ app.use("/api/navbar", navbarRoutes);
 app.use("/api/social-links", socialLinksRoutes);
 app.use("/api/reviews", reviewRoutes);
 
-app.listen(process.env.PORT, () => {
-  console.log(`Server running on http://localhost:${process.env.PORT}`);
+app.listen(PORT, () => {
+  console.log(`🚀 Server running on port ${PORT}`);
 });
