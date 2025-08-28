@@ -19,6 +19,8 @@ app.use(cors({
     "http://localhost:3000", // Next.js default
     "http://localhost:3001", // your current Next.js dev
     "https://battlegroundadminpanel-project.vercel.app",
+    "https://battlegroundlandingpage-project.vercel.app",
+
     "https://your-frontend-domain.com" // deployed frontend
   ],
   methods: ["GET", "POST", "PUT", "DELETE"],
